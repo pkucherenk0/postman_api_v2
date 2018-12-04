@@ -1,0 +1,2246 @@
+{
+	"info": {
+		"_postman_id": "96b73716-ecea-4349-8719-276b3e0906df",
+		"name": "(microkube) Barong v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v2/barong/identity/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{barong}}identity/ping",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/ping",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/ping",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 10:29:17 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"333b4140438f287af91da2a6ab49ae38\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=QrOQpzJ%2B4AFZmOUkNHf6W8DjTavgKK5PtuY5okAzV1ceRGJp6nv91gK0TB4SVq7kE%2F5wV8c2XIqKabW%2BZcrWw5%2Fq8L%2BehQ%3D%3D--3Z%2FaDXGid25HNhnl--CkRNt%2F6vhNu6PYgzM8CeFA%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=sQ8j6nm%2FNwaIhYbiDuxHKFPl8voaV10cZBn%2F5gM1CG75eFFxnSHPxtJF4vWSfh0YeqRM9Y0d8ONrk2USa%2Fm%2B7hzzDzq3KQ%3D%3D--xedkIgL1y%2BorzKP5--gQXxqorXTheDC%2Fdhww1Zew%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "15"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "00b47c38-0969-49a5-b13e-708f578af0e3"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.014067"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ping\": \"pong\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{barong}}identity/time",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"time"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/time",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/time",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"time"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 10:40:23 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"8badf9d8a56eb836076700133fc7e767\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=xLwisdTXR0J2SpSTDbkDocLUH8zz3gpc2g5sXIpYFxqgCtxdwxzgVIliHr%2FC%2FaLcYXupCETCIQuSFtX1vU37ucOyPR9L3Q%3D%3D--zeBWf%2Fwdf4qXGl9q--Cfw7KyIbTdKzQBK1dgVaaw%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=WFbwdBKvI%2FJONRw8hNIEK7vPTgcex0PpTHoQiFI9SXHSVYcR0ccYkF78yc8uLwQz3oJR8G%2FBGDp5Umx%2FsWDNtc8IvCX9fg%3D%3D--rL91CFFA1qkbv%2BdF--mWt5sbbPwrp3KcZfey5riA%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "5"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "86d2c882-009b-4f83-91f2-3acffb16b72a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003781"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"time\": 1543833624\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "recaptcha_response",
+							"value": "03ADlfD1_tYpCKWxeKDj3DQ1snKnN-Brc3UbWgVdAfldsgwBZguUXfYAQ7EBJz9Lh2nmdkJVNmNhqznhIJ7eZplace0XaI_iQBAFEgBr8sPbTNe9AmIW4Hxg7nIsdysRwQrmKXKiqeEVRqfzvt0EO4pqbp5h4w6sqUeClMVCpBP0cHWaU_2JSQ5nXnjTBOhhXu1jjr8VW0C5pGFpVtPqH3KdVRcMCxoI-5MJXyH3AEYToH3mWsbYUr_340QS9Lh-UvRq-ShXvf5g8inr6xF0tbYJWLLbYtV8EaXA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/users",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2/barong/identity/sessions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "otp_code",
+							"value": "014686",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/sessions",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/sessions (200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1432",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/sessions",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"sessions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:06:15 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"27badc983df1780b60c2b3fa9d3a19a0\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=jB4wKZjH%2BjmIaWXzvQYy8yZtn%2BOGe6JhYwv9xpiKr6OWnPR3S71YKeEkaBDMWyiwSuGb43bxLmExEcyXk8Px8lyaEXFnqg%3D%3D--VDCbGT%2BckWZ%2FxoiQ--o6UjWrJ9ELTggas%2F3yUUbQ%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=izyy1F8USuJEA1ZiY6x3yxDDQ0bs7cukTNdI8cvdk19tfMwWzvmDVEuhVS0rUvLpMK2oduY47Ldyro9HigMa6iGTFXQFFQ%3D%3D--%2BzPMSgXk9ccj1YYB--YawTfbvuCOhhbb6meY4zhQ%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "91"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "80c8cac3-2089-4b69-b396-dbbdb2e79bee"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.089926"
+						}
+					],
+					"cookie": [],
+					"body": "200"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/users/email/generate_code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/users/email/generate_code",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"users",
+						"email",
+						"generate_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/generate_code (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/users/email/generate_code",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"users",
+								"email",
+								"generate_code"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 13:32:10 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"43974ed74066b207c30ffd0fed514676\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=ietEOkFtBSF8yicQPKeB5qg%2FLpMfSLoZ%2B9N91CzBbe%2B2MZ8vXL47XXHuwR7OeizdZD%2B460NX8QT44q2lCYuq18DK%2FzFnVw%3D%3D--tnzGxlqFYANQakmf--eD7STAq6R%2FWmR7nJlY3ewg%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=ZFnGdNGYNbsEjtVcil%2F94wX3Z9t5Bz0MnAbNWRZU90Di5BszxEztoegfaxIpPoTvk6buqjmkCWxhaR3pMSB2p3KZbdcWkA%3D%3D--28DkhmuuQe5e%2Fxb%2F--DxLXM5%2BcRClsrWYR%2BaPOZw%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "11"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6d4b976c-e134-472a-9e0c-be8866cfa7a0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009991"
+						}
+					],
+					"cookie": [],
+					"body": "201"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/users/email/confirm_code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1NDM1ODA5NjgsImV4cCI6MTU0MzU4Njk2OCwic3ViIjoiY29uZmlybWF0aW9uIiwiaXNzIjoiYmFyb25nIiwiYXVkIjpbInBlYXRpbyIsImJhcm9uZyJdLCJqdGkiOiIzZmIyYjlhOWY5NzEyMDZjZTM1MyIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVpZCI6IklENEU5MjMyOTg1MCJ9.1fAi3m0VbRH9qmjW4ZwOjOcC17-Xyd49NznaT50ZX9I2f9TfK66kuT8TtbaLm9XrA2YHRqMzLt-omYnAKNuRe407MlZL-BNqLBxAoJwxTngcVx7ZAyZ_zoCPqda6hHxzPR-eZyrKL-i72IDQ_u7E5Sjw_EQpkZGkm3Sd8aXI8tQFsBO9P9ybcomWjtyx1UmgwXxSyy7eikR_VBbEhEYRWxq4DV8yQYjfarfSMIQ9ruraND9QVRnXMVnv2vvpKdWjVtRxtECP4kyIAaxN-G4rgfKT_B9GEA5EcR7IjiUZjcRjF2c86SNjgFCrRoiGZpzfCroWXaDI7OrQUP5HXIORXw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/users/email/confirm_code",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"users",
+						"email",
+						"confirm_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/confirm_code (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1NDM4NDM5MzAsImV4cCI6MTU0Mzg0OTkzMCwic3ViIjoiY29uZmlybWF0aW9uIiwiaXNzIjoiYmFyb25nIiwiYXVkIjpbInBlYXRpbyIsImJhcm9uZyJdLCJqdGkiOiI2ODEwNzUxN2JkZTE2ZmI5NmIzZiIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVpZCI6IklEMDc1MTlBNjA3MyJ9.E9DXqkpnAox0pPejXkwyOnyo_BrO9F0ixuyI2ybYVd3wnNCCcQHgsWjyUqJYL2GlWiufKVn8QfGIaYQ0ALJDlbnr5sfJLLQYK9u65dAgxO7ZvG80g6kh69eT3cFfCvWY13a__OxO9tC6uS3M9MCHYsoNaiJXIWXSwP7WLrL59-ThHamq5IBBY4F-QZZJ6PRLDKnD4nel6FtUIiS90yf5oI_9R07aLWjWMbuC_lAwYI_XoZny6lNijgatucYmsfmHOhFND6pFT81hlg9iN7XnSET81GhgNDbER3FUnu1igICtxUeSuJdLHZam6b6zW2de0ARXDjaBTxmM_eZuz7EZug",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/users/email/confirm_code",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"users",
+								"email",
+								"confirm_code"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 13:33:55 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"43974ed74066b207c30ffd0fed514676\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=XVypCJTIiWwxvrf%2FF5OpQDRG65WDolMKLu9sGQn%2BTmWpJNbk6SSsy0w863KRbeiDarEbmyniOzRiVEb2rtT5lXzVvOUmaw%3D%3D--EjL12H07%2FVnIspYI--YGVdkCwXTijuPbLtvOdDkQ%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=OQduQhNaW4JlV5Lot%2FWAEt2Txlfaaan7kXiRF3Cp4rNa5qNR6hU2Czu5XTtwRX5K0NphmcKS6MOk4ju0tLp245h0MSiMtw%3D%3D--eOEwEkYs1I9S61kp--lfIBlnsMqUomz7LcggxScw%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "117"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d1671581-2c92-4519-bd69-831243cb71e4"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.116367"
+						}
+					],
+					"cookie": [],
+					"body": "201"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/users/password/generate_code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "{{email}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/users/password/generate_code",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"users",
+						"password",
+						"generate_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/generate_code (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/users/password/generate_code",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"users",
+								"password",
+								"generate_code"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 13:41:46 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"43974ed74066b207c30ffd0fed514676\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=W6Hb%2FXb93NEt%2FV%2FnEhuNGuZO5iN%2FkyOI4mSahKWctmCHUcAm%2FgAgrAgZNVIpfdfpUELyt4tbSodQCxwwpUyiE8u7YbZBfA%3D%3D--YJcs16Jd8h%2F1W3Og--0%2F67o9yc0dmBB6myEnUchg%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=aNu6DKrCG5GVcRMDMdjigjCCwZ2fD%2F2bmHTZ4AobhA76jPy0Nv0inQtt516JaMQBO8AuabFICTv0D1ZzomZjvgB1zVLsLg%3D%3D--%2B0INUEIWSqTlMzmq--PqvQqzG%2BDAW2TIiUx7yuZQ%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "31"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5c400807-3dc3-4f5b-a9f5-97f5004ddb3c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.031149"
+						}
+					],
+					"cookie": [],
+					"body": "201"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/identity/users/password/confirm_code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "reset_password_token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1NDM1ODI5NDMsImV4cCI6MTU0MzU4ODk0Mywic3ViIjoicmVzZXQiLCJpc3MiOiJiYXJvbmciLCJhdWQiOlsicGVhdGlvIiwiYmFyb25nIl0sImp0aSI6IjAyYjdjYzM5YjI2MGQzNGVkYzVlIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidWlkIjoiSUQ0RTkyMzI5ODUwIn0.X-Dq49P0SpbYF-Vu99Y9dr-6xaHIgkTiBuMqSX-qFguK8Ra7RoAqkgezKOTGcgrAsoPj4D5uZaLHvz9RpVfFYAqQYBxyYMm4VpIgp5QIXRLEnQpDHjcCWAVh0GpDRJiIuSTHkmsXJGp6Tn0HL50TCggC4ktU9g5ISZVzh8StkrNNyY2x68OsT9iMT6-fAp5BETTSjh6C2Ju9eh3ozpi4G6qwoP7_plMk6q8hXs0nb65DNoAidSqnS1KzqH4GpfKwSz_tgzY1ywFu8CmDdAdgyNUkuVJNd597Qu5kUJsBtY58AT6NwYyr2LVg2sAG5gxsipyGxvKU0HPGbVHDcguTGQ",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "{{password}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}identity/users/password/confirm_code",
+					"host": [
+						"{{barong}}identity"
+					],
+					"path": [
+						"users",
+						"password",
+						"confirm_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/confirm_code (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reset_password_token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1NDM4NDQ1MDYsImV4cCI6MTU0Mzg1MDUwNiwic3ViIjoicmVzZXQiLCJpc3MiOiJiYXJvbmciLCJhdWQiOlsicGVhdGlvIiwiYmFyb25nIl0sImp0aSI6ImEwZWY1NjE5NjVmNmI3ZTI3MDk2IiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidWlkIjoiSUQwNzUxOUE2MDczIn0.19q4H5wqqLfXBYHjS5k-IkqRVqsOitZmsi4Yktgs_cKXbOjS2PEJDqi4Mf0aRZkCvTepOiPtG3E2SrwCElSVyEuC-ni6w8a78sFjNsoBjng4DMj62XG-G7X78ZwD4WHFMvys-dBc1vuOIV9dVx_yn8H_0Q9_fl0uPyN4Shv4J6uN22HQ4jr11hytJjk_fq-WchCimKEUcjadI-fayVJrPXQWgNt5e9xW5e4Ios081qus4IhHhLp6UaNp0E59XRjlqADk2GMnf7nQnSJXqMagE6ectz4tXGqAuUKgZQ9_vHXtlkOsUZqay7UVPVhP3iTNauxMHqDcHmet40YSGGOYWQ",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1432",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Test1432",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/identity/users/password/confirm_code",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"identity",
+								"users",
+								"password",
+								"confirm_code"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 13:44:43 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"43974ed74066b207c30ffd0fed514676\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_session_id=B0GbpNPYAWAprFIUzuoKZv0X1fNx4oze70S95TLg7lfSENIIvVg4kmtb8ufMusJsh8s8MPv54R%2BQnnugJK%2BehwNR248DIg%3D%3D--nzyAoZG9QrTwOpO8--3uC2rqrpIzxB%2FsSoa98aGw%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_barong_session=YIpUr%2BsIvapk6pPd1vgB18Uv8wAcFhjyu9t89SVZXrQJIexAT7bBh8Thul99jqsBi3kZ66CQ1wiWd0gGb3nRS9w6v%2BW7jA%3D%3D--906h%2BA97D6OHG5pr--M%2BWfEui85RCEhf%2B47InK0Q%3D%3D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "76"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "aa43e148-973a-4c00-a394-b221cc4536e6"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.075781"
+						}
+					],
+					"cookie": [],
+					"body": "201"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/users/me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{barong}}resource/users/me",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/me (201)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/users/me",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"users",
+								"me"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 13:46:36 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"75492fdc3f1aa8cad1d2666d8c7031fe\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "4"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "85553052-0e30-4bb6-b53b-f82f5ae21ba6"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003144"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"uid\": \"ID07519A6073\",\n    \"email\": \"test@test.com\",\n    \"role\": \"member\",\n    \"level\": 1,\n    \"otp\": false,\n    \"state\": \"active\",\n    \"created_at\": \"2018-12-03T13:30:57.000Z\",\n    \"updated_at\": \"2018-12-03T13:44:43.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/users/activity/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "topic",
+							"value": "session",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/users/activity/all",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"users",
+						"activity",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/activity/all (200)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "topic",
+									"value": "session",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/users/activity/all",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"users",
+								"activity",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "679"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:36:39 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"17913a4e510f82fd81e67969b9e5a419\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "63"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0552e33a-48f6-4bef-a998-96fd1d932c1a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.060406"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"user_id\": 5,\n        \"user_ip\": \"172.20.0.9\",\n        \"user_agent\": \"PostmanRuntime/7.3.0\",\n        \"topic\": \"session\",\n        \"action\": \"login\",\n        \"result\": \"succeed\",\n        \"data\": \"{\\\"note\\\":\\\"Detected suspicious browser\\\"}\",\n        \"created_at\": \"2018-12-03T13:46:33.000Z\"\n    },\n    {\n        \"id\": 6,\n        \"user_id\": 5,\n        \"user_ip\": \"172.20.0.9\",\n        \"user_agent\": \"PostmanRuntime/7.3.0\",\n        \"topic\": \"session\",\n        \"action\": \"login\",\n        \"result\": \"succeed\",\n        \"data\": \"{\\\"note\\\":\\\"Detected suspicious browser\\\"}\",\n        \"created_at\": \"2018-12-03T14:06:15.000Z\"\n    },\n    {\n        \"id\": 7,\n        \"user_id\": 5,\n        \"user_ip\": \"172.20.0.9\",\n        \"user_agent\": \"PostmanRuntime/7.3.0\",\n        \"topic\": \"session\",\n        \"action\": \"login\",\n        \"result\": \"succeed\",\n        \"data\": \"{\\\"note\\\":\\\"Detected suspicious browser\\\"}\",\n        \"created_at\": \"2018-12-03T14:06:45.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/phones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "{{phone}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/phones",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"phones"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/phones (200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "+380504403833",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/phones",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"phones"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:37:07 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a964c4341e63a68d540487cfd325b5bf\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "327"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5fc59bce-96b9-4b56-84bc-96fe8c6016bf"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.325619"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Code was sent successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/phones/send_code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "{{phone}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/phones/send_code",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"phones",
+						"send_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/phones/send_code (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "+380504403833",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/phones/send_code",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"phones",
+								"send_code"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:37:55 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a964c4341e63a68d540487cfd325b5bf\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "28"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5758d661-0f3a-4b40-8322-e778b3d0b21a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.027600"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Code was sent successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/phones/verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "{{phone}}",
+							"type": "text"
+						},
+						{
+							"key": "verification_code",
+							"value": "91048",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/phones/verify",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"phones",
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/phones/verify (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "+380504403833",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "53357",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/phones/verify",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"phones",
+								"verify"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:38:27 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"5555a06f6c60433a15bf4ea68586dabe\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "81"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "da8982f1-a3cc-410e-802f-3e1b57cc2515"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.080491"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Phone was verified successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_barong_session",
+						"value": "t6O%2BUN6Wf3yV0LumnhPcKgXMvbLNxPH2iqfYkCmfaDum0po04antBljEApbyUJ%2FFszXS7%2FW3xYX%2FAhqbhdY6mzVIZMKkOw%3D%3D--2iN5E2ttPp5fOaUo--twj28ltsr3h6bf29Erq4xQ%3D%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "_session_id",
+						"value": "Y2gC1ouuCCG8B4UNGPpSsamlW8iK5hj0xFYkUuLao%2FqD%2BxRhn5vNFtdF7LA%2BW5C3HLVgx5aOmlM5AAAbRFzcQdE%2Bz%2Fy7mA%3D%3D--t9N9P5J1FUyuGxa7--32BTjRGhM5hGkrPrfVQKJA%3D%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "apikey",
+						"value": "thsrth56",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doc_expire",
+							"value": "30.06.2019",
+							"type": "text"
+						},
+						{
+							"key": "doc_type",
+							"value": "Passport",
+							"type": "text"
+						},
+						{
+							"key": "doc_number",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "upload",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "metadata",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/documents",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/documents (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "_barong_session",
+								"value": "t6O%2BUN6Wf3yV0LumnhPcKgXMvbLNxPH2iqfYkCmfaDum0po04antBljEApbyUJ%2FFszXS7%2FW3xYX%2FAhqbhdY6mzVIZMKkOw%3D%3D--2iN5E2ttPp5fOaUo--twj28ltsr3h6bf29Erq4xQ%3D%3D",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "_session_id",
+								"value": "Y2gC1ouuCCG8B4UNGPpSsamlW8iK5hj0xFYkUuLao%2FqD%2BxRhn5vNFtdF7LA%2BW5C3HLVgx5aOmlM5AAAbRFzcQdE%2Bz%2Fy7mA%3D%3D--t9N9P5J1FUyuGxa7--32BTjRGhM5hGkrPrfVQKJA%3D%3D",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "apikey",
+								"value": "thsrth56",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "doc_expire",
+									"value": "30.06.2019",
+									"type": "text"
+								},
+								{
+									"key": "doc_type",
+									"value": "Passport",
+									"type": "text"
+								},
+								{
+									"key": "doc_number",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "upload",
+									"type": "file"
+								},
+								{
+									"key": "metadata",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/documents",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"documents"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:23:02 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"43974ed74066b207c30ffd0fed514676\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "390"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7efe70b4-fc4a-4d1a-93f6-085bfa3eea5e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.380133"
+						}
+					],
+					"cookie": [],
+					"body": "201"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/documents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "_barong_session",
+						"value": "t6O%2BUN6Wf3yV0LumnhPcKgXMvbLNxPH2iqfYkCmfaDum0po04antBljEApbyUJ%2FFszXS7%2FW3xYX%2FAhqbhdY6mzVIZMKkOw%3D%3D--2iN5E2ttPp5fOaUo--twj28ltsr3h6bf29Erq4xQ%3D%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "_session_id",
+						"value": "Y2gC1ouuCCG8B4UNGPpSsamlW8iK5hj0xFYkUuLao%2FqD%2BxRhn5vNFtdF7LA%2BW5C3HLVgx5aOmlM5AAAbRFzcQdE%2Bz%2Fy7mA%3D%3D--t9N9P5J1FUyuGxa7--32BTjRGhM5hGkrPrfVQKJA%3D%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "apikey",
+						"value": "thsrth56",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "pkucherenko@heliostech.fr",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "6NR4iqJ10Oawbmb2QNu6drVrG7/TKIGKZvdfP+bf",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/documents",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/documents (200)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "_barong_session",
+								"value": "t6O%2BUN6Wf3yV0LumnhPcKgXMvbLNxPH2iqfYkCmfaDum0po04antBljEApbyUJ%2FFszXS7%2FW3xYX%2FAhqbhdY6mzVIZMKkOw%3D%3D--2iN5E2ttPp5fOaUo--twj28ltsr3h6bf29Erq4xQ%3D%3D",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "_session_id",
+								"value": "Y2gC1ouuCCG8B4UNGPpSsamlW8iK5hj0xFYkUuLao%2FqD%2BxRhn5vNFtdF7LA%2BW5C3HLVgx5aOmlM5AAAbRFzcQdE%2Bz%2Fy7mA%3D%3D--t9N9P5J1FUyuGxa7--32BTjRGhM5hGkrPrfVQKJA%3D%3D",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "apikey",
+								"value": "thsrth56",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "pkucherenko@heliostech.fr",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "6NR4iqJ10Oawbmb2QNu6drVrG7/TKIGKZvdfP+bf",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/documents",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"documents"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:23:21 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"37cd165dd97c51b0fe4870f7bca6fa8b\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "24"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "59c56367-1439-4c5b-991d-926cb06e2aa6"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.023718"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"upload\": {\n            \"url\": \"/uploads/document/upload/1/Selection_762.png\"\n        },\n        \"doc_type\": \"Passport\",\n        \"doc_number\": \"1\",\n        \"doc_expire\": \"2019-06-30\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/otp/generate_qrcode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{barong}}resource/otp/generate_qrcode",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"otp",
+						"generate_qrcode"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/otp/generate_qrcode (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/otp/generate_qrcode",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"otp",
+								"generate_qrcode"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3079"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:38:58 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"59bc246e173b5a22c657f397d4bdab85\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "200"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "80a4ae94-3574-4a1f-9bef-0636b226e81a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.199207"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auth\": null,\n    \"data\": {\n        \"barcode\": \"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\",\n        \"url\": \"otpauth://totp/Barong:test@test.com?algorithm=SHA1&digits=6&issuer=Barong&period=30&secret=U3AIVZVWVY4SVWYPOW6R5B7GRKLQJCOB\"\n    },\n    \"lease_duration\": 0,\n    \"lease_id\": \"\",\n    \"renewable\": false,\n    \"warnings\": null,\n    \"wrap_info\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/otp/enable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "351210",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/otp/enable",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"otp",
+						"enable"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/otp/enable (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "902896",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/otp/enable",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"otp",
+								"enable"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:40:12 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"74234e98afe7498fb5daf1f36ac2d78a\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "61"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6d0d552f-08da-480a-8d6f-05fcf4164577"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.060178"
+						}
+					],
+					"cookie": [],
+					"body": "null"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/profiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Jhon",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Dow",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "30.06.1992",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Main street",
+							"type": "text"
+						},
+						{
+							"key": "postcode",
+							"value": "6846AA",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Midle of Nowhere",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						},
+						{
+							"key": "metadata",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/profiles",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/profiles (201)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Jhon",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Dow",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "30.06.1992",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Main street",
+									"type": "text"
+								},
+								{
+									"key": "postcode",
+									"value": "6846AA",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Midle of Nowhere",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "US",
+									"type": "text"
+								},
+								{
+									"key": "metadata",
+									"value": "8",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/profiles",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"profiles"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:44:43 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"74234e98afe7498fb5daf1f36ac2d78a\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "136"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d47431ad-d46a-4eaa-a6ec-550e44dd3e7d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.135214"
+						}
+					],
+					"cookie": [],
+					"body": "null"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/profiles/me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{barong}}resource/profiles/me",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"profiles",
+						"me"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/profiles/me (201)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.app.local/api/v2/barong/resource/profiles/me",
+							"protocol": "http",
+							"host": [
+								"www",
+								"app",
+								"local"
+							],
+							"path": [
+								"api",
+								"v2",
+								"barong",
+								"resource",
+								"profiles",
+								"me"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Dec 2018 14:45:10 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"da8fb21c0dc83e0bb5e23cf3deca4eb3\""
+						},
+						{
+							"key": "Server",
+							"value": "envoy"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "6"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f640bc75-c4f3-4b7a-9d4f-e47545b53a2c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004502"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"first_name\": \"Jhon\",\n    \"last_name\": \"Dow\",\n    \"dob\": \"1992-06-30\",\n    \"address\": \"Main street\",\n    \"postcode\": \"6846AA\",\n    \"city\": \"Midle of Nowhere\",\n    \"country\": \"US\",\n    \"metadata\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "v2/barong/resource/api_key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "otp_code",
+							"value": "614546",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{barong}}resource/api_keys",
+					"host": [
+						"{{barong}}resource"
+					],
+					"path": [
+						"api_keys"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3abbbb35-9e01-42b9-9f12-48344911819b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3de5d077-b5d0-4020-9402-6514064c03ba",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
