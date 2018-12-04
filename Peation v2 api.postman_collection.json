@@ -1,0 +1,702 @@
+{
+	"info": {
+		"_postman_id": "901aaf2d-9dfa-40a0-9016-dc96f04870f5",
+		"name": "Peation v2 api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sessions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}sessions",
+					"host": [
+						"{{peatio}}sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "members/me",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "262cd66f-ff91-4337-918e-1988bc75db5f",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"amoun_btc\", parseFloat(jsonData.accounts[0].balance).toFixed(6));",
+							"postman.setEnvironmentVariable(\"amount_eth\", parseFloat(jsonData.accounts[2].balance).toFixed(6));",
+							"tests[\"amoun of \" + jsonData.accounts[0].currency + \" = \" + parseFloat(jsonData.accounts[0].balance).toFixed(6)] = true;",
+							"tests[\"amoun of \" + jsonData.accounts[2].currency + \" = \" + parseFloat(jsonData.accounts[2].balance).toFixed(6)] = true;",
+							"",
+							"postman.setEnvironmentVariable(\"bid_one_percent_btc\", (parseFloat(postman.getEnvironmentVariable(\"amoun_btc\") / 100) * 1).toFixed(6));",
+							"postman.setEnvironmentVariable(\"ask_one_percent_eth\", (parseFloat(postman.getEnvironmentVariable(\"amoun_eth\") / 100) * 1).toFixed(6));",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}members/me",
+					"host": [
+						"{{peatio}}members"
+					],
+					"path": [
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "member_levels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}member_levels",
+					"host": [
+						"{{peatio}}member_levels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposit_address?currency=eth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}deposit_address?currency=eth",
+					"host": [
+						"{{peatio}}deposit_address"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "eth"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currencies/eth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}currencies/eth",
+					"host": [
+						"{{peatio}}currencies"
+					],
+					"path": [
+						"eth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposits",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}deposits?limit=100",
+					"host": [
+						"{{peatio}}deposits"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraws",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "currency",
+							"value": "btc",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "0.01",
+							"type": "text"
+						},
+						{
+							"key": "rid",
+							"value": "2MtqWmodqriB5pSXExD6Lkw7giLfP2w29qr",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{peatio}}withdraws?limit=30",
+					"host": [
+						"{{peatio}}withdraws"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fees/withdraw",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}fees/withdraw",
+					"host": [
+						"{{peatio}}fees"
+					],
+					"path": [
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraws?currency=eth&page=1&limit=100",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}withdraws?currency=eth&page=2&limit=100",
+					"host": [
+						"{{peatio}}withdraws"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "eth"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "market",
+							"value": "eurusd",
+							"type": "text"
+						},
+						{
+							"key": "side",
+							"value": "buy",
+							"type": "text"
+						},
+						{
+							"key": "volume",
+							"value": "0.5",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1",
+							"description": "Enable if you whant \"limit\"market order type",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ord_type",
+							"value": "market",
+							"description": "Disable if you whant \"limit\"market order type",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{peatio}}orders",
+					"host": [
+						"{{peatio}}orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order?id=666",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "755de4a6-6d4b-43ba-a255-72f777c70c26",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}order?id=1",
+					"host": [
+						"{{peatio}}order"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{peatio}}order/delete",
+					"host": [
+						"{{peatio}}order"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders/clear",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}orders/clear",
+					"host": [
+						"{{peatio}}orders"
+					],
+					"path": [
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders?market=eurusd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}orders?market=eurusd",
+					"host": [
+						"{{peatio}}orders"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order_book?market=eurusd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}order_book?market=eurusd",
+					"host": [
+						"{{peatio}}order_book"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "depth?market=eurusd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}depth?market=eurusd",
+					"host": [
+						"{{peatio}}depth"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fees/trading",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}fees/trading",
+					"host": [
+						"{{peatio}}fees"
+					],
+					"path": [
+						"trading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trades/my?market=eurusd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}trades/my?market=eurusd",
+					"host": [
+						"{{peatio}}trades"
+					],
+					"path": [
+						"my"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trades?market=eurusd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}trades?market=eurusd",
+					"host": [
+						"{{peatio}}trades"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency/trades?currency=eth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}currency/trades?currency=eth",
+					"host": [
+						"{{peatio}}currency"
+					],
+					"path": [
+						"trades"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "eth"
+						}
+					]
+				},
+				"description": "24 hours change"
+			},
+			"response": []
+		},
+		{
+			"name": "k?market=eurusd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}k?market=eurusd",
+					"host": [
+						"{{peatio}}k"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "k_with_pending_trades?market=eurusd&trade_id=666",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}k_with_pending_trades?market=eurusd&trade_id=100",
+					"host": [
+						"{{peatio}}k_with_pending_trades"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						},
+						{
+							"key": "trade_id",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tickers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{peatio}}tickers/eurusd",
+					"host": [
+						"{{peatio}}tickers"
+					],
+					"path": [
+						"eurusd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
