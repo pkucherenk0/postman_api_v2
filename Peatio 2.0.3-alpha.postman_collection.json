@@ -1,0 +1,933 @@
+{
+	"info": {
+		"_postman_id": "360adea6-4b26-46b8-8c79-6032e9277965",
+		"name": "Peatio 2.0.3-alpha",
+		"description": "https://github.com/rubykube/peatio/blob/a4c612b0b8b5e39cf3ef2f11380587dee03faeb7/docs/api/member_api_v2.md",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public/timestamp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/timestamp",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"timestamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/member-levels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/member-levels",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"member-levels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/{market}/tickers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/markets/eurusd/tickers",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"markets",
+						"eurusd",
+						"tickers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/tickers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/markets/tickers",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"markets",
+						"tickers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/{market}/k-line",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/markets/eurusd/k-line",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"markets",
+						"eurusd",
+						"k-line"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/{market}/depth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}/public/markets/eurusd/depth",
+					"host": [
+						"{{peatio}}"
+					],
+					"path": [
+						"public",
+						"markets",
+						"eurusd",
+						"depth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/{market}/trades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}/public/markets/eurusd/trades",
+					"host": [
+						"{{peatio}}"
+					],
+					"path": [
+						"public",
+						"markets",
+						"eurusd",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets/{market}/order-book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}/public/markets/eurusd/order-book",
+					"host": [
+						"{{peatio}}"
+					],
+					"path": [
+						"public",
+						"markets",
+						"eurusd",
+						"order-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/markets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}/public/markets",
+					"host": [
+						"{{peatio}}"
+					],
+					"path": [
+						"public",
+						"markets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/currencies",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/currencies/{asset}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/currencies/eur",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"currencies",
+						"eur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/fees/trading",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/fees/trading",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"fees",
+						"trading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/fees/deposit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/fees/deposit",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"fees",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public/fees/withdraw",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}public/fees/withdraw",
+					"host": [
+						"{{peatio}}public"
+					],
+					"path": [
+						"fees",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/balances/{asset}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}account/balances/eur",
+					"host": [
+						"{{peatio}}account"
+					],
+					"path": [
+						"balances",
+						"eur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}account/balances",
+					"host": [
+						"{{peatio}}account"
+					],
+					"path": [
+						"balances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/deposit_address/{coin}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}account/deposit_address/eth",
+					"host": [
+						"{{peatio}}account"
+					],
+					"path": [
+						"deposit_address",
+						"eth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/deposits/{txid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}account/deposits/{txid}",
+					"host": [
+						"{{peatio}}account"
+					],
+					"path": [
+						"deposits",
+						"{txid}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/deposits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}account/deposits",
+					"host": [
+						"{{peatio}}account"
+					],
+					"path": [
+						"deposits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/withdraws",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}/account/withdraws",
+					"host": [
+						"{{peatio}}"
+					],
+					"path": [
+						"account",
+						"withdraws"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/trades?market={market}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}market/trades?market=eurusd",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"trades"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/orders/cancel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}market/orders/cancel",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"orders",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/orders/{id}/cancel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}market/orders/{id}/cancel",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"orders",
+						"{id}",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/orders?market={market}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}market/orders?market=eurusd",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"orders"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "eurusd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "market",
+							"value": "eurusd",
+							"type": "text"
+						},
+						{
+							"key": "side",
+							"value": "buy",
+							"type": "text"
+						},
+						{
+							"key": "volume",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ord_type",
+							"value": "limit",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{peatio}}market/orders",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market/orders/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}market/orders/{id}",
+					"host": [
+						"{{peatio}}market"
+					],
+					"path": [
+						"orders",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/timestamp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}management/timestamp",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"timestamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/withdraws/action",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tid\":\"{tid}}\",\n\"action\":\"process\"}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/withdraws/action",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"withdraws",
+						"action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/withdraws/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":\"{uid}\",\n\t\"rid\":\"{rid}\",\n\t\"currency\":\"{currency}\",\n\t\"amount\":\"{amount}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/withdraws/new",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"withdraws",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/withdraws/get",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tid\":\"{tid}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/withdraws/get",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"withdraws",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/withdraws",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}management/withdraws",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"withdraws"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/deposits/state",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tid\":\"{tid}\",\n\t\"state\":\"{state}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/deposits/state",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"deposits",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/deposits/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":\"{uid}\",\n\t\"currency\":\"{currency}\",\n\t\"amount\":\"{amount}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/deposits/new",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"deposits",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/deposits/get",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tid\":\"{tid}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/deposits/get",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"deposits",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/deposits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{peatio}}management/deposits",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"deposits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management/accounts/balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":\"{uid}\",\n\t\"currency\":\"{currency}\"\n}"
+				},
+				"url": {
+					"raw": "{{peatio}}management/accounts/balance",
+					"host": [
+						"{{peatio}}management"
+					],
+					"path": [
+						"accounts",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8d459bfe-c2c6-45dd-a347-c6385a879bdd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "83b18984-48c4-45ff-9967-464bfdc907fd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
